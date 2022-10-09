@@ -466,9 +466,9 @@ mystic_echo() {
 			# 24-bit RGB does it like this: \033[38;R;G;B;128m
 			#
 			# Usage:
-			#     rgb <red> <green> <blue>
-			#			rgb  000     128     255
-			#     rgb   00      80      FF
+			#		rgb <red> <green> <blue>
+			#		rgb  000     128     255
+			#		rgb   00      80      FF
 			# you can use hex or dec because I love you.
 			# num args <3 are interpreted as hex (use 00-FF)
 			# num args >2 are interpreted as dec (use 000-255)
