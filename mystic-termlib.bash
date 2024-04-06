@@ -1,6 +1,6 @@
 #####
 #
-# Mystic TermLib v1.1.0
+# Mystic TermLib v1.1.1
 # A fast, light, and fluenty bash library for using terminal escape sequences.
 #
 # This program is free software: you can redistribute it and/or modify it under the terms of the
