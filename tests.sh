@@ -36,3 +36,13 @@ mystic_24bit_test() {
 		done
 	done
 }
+
+printf "%s\n" "ANSI test"
+mystic_ansi_test
+printf "\n"
+printf "%s\n" "8-bit test"
+mystic_8bit_test
+printf "\n"
+printf "%s\n" "24-bit test"
+mystic_24bit_test
+printf "\n"
