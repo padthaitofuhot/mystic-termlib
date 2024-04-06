@@ -61,7 +61,7 @@ MYSTIC_TC_LOAD_CURSOR="${MYSTIC_TC_ESC}8"
 
 # Terminal Attribute Codes
 MYSTIC_AT_BOLD="${MYSTIC_TC_ESC}[1m"
-MYSTIC_AT_DIM="${MYSTIC_TC_ESC}[2m"
+MYSTIC_AT_FAINT="${MYSTIC_TC_ESC}[2m"
 MYSTIC_AT_ITALIC="${MYSTIC_TC_ESC}[3m"
 MYSTIC_AT_UNDERLINE="${MYSTIC_TC_ESC}[4m"
 MYSTIC_AT_BLINK="${MYSTIC_TC_ESC}[5m"
@@ -324,11 +324,11 @@ mystic_echo() {
 		case "$1" in
 
 			# Basic text control
-			bold)
+			bold | bd)
 				_print+="${MYSTIC_PC_START}${MYSTIC_AT_BOLD}${MYSTIC_PC_STOP}"
 				;;
-			unbold | ub)
-				_print+="${MYSTIC_PC_START}${MYSTIC_AT_DIM}${MYSTIC_PC_STOP}"
+			faint | ft)
+				_print+="${MYSTIC_PC_START}${MYSTIC_AT_FAINT}${MYSTIC_PC_STOP}"
 				;;
 			underline | ul)
 				_print+="${MYSTIC_PC_START}${MYSTIC_AT_UNDERLINE}${MYSTIC_PC_STOP}"
